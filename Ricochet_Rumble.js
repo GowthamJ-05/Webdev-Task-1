@@ -697,16 +697,26 @@ return new Promise( async (resolve, reject) =>{
                         c = targetCol
                         
                     }
-                if (pieceId='semiRicochet') {
-                    count++;
-                    const semiRotation = parseInt(semi.dataset.rotation) || 0;
-                    const deflection = deflectBullet('semi', semiRotation, color, count, targetRow, targetCol, bullet, interval, deltaRow, deltaCol);
-                    deltaRow = deflection.newDeltaRow;
-                    deltaCol = deflection.newDeltaCol;
-                    rowIndex = targetRow;
-                    colIndex = targetCol;
-                    return;
-                }
+                // if (pieceId='semiRicochet') {
+                //     count++;
+                //     computedStyle = window.getComputedStyle(piece);
+                //     transformValue = computedStyle.getPropertyValue('transform');
+                //     if (transformValue !== 'none') {
+                //         var values = transformValue.split('(')[1].split(')')[0].split(',');
+                //         var a = values[0];
+                //         var b = values[1];
+                //     }
+                //     var radians = Math.atan2(b, a);
+                //     var angle = radians * (180 / Math.PI);
+                //     semiRotation=angle.toFixed(0)
+                    
+                //     const deflection = deflectBullet(semiRotation)
+                //     deltaRow =newDeltaRow;
+                //     deltaCol =newDeltaCol;
+                //     row = targetRow;
+                //     col = targetCol;
+                //     return;
+                // }
     
                     if (pieceId=='tank') {
                         bulletDiv.remove();
