@@ -1,0 +1,150 @@
+*{
+    margin :0;
+    padding :0;
+}
+
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+} 
+/* h1{
+
+} */
+
+
+
+#turn{
+    padding:1vh;
+    color:black;
+}
+#timer{
+    width:90vmax;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+#timer1{
+    width:40vmax;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#timer2{
+    width:40vmax;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#gameBoard{
+    display:flex;
+    flex-wrap:wrap;
+    width:64vmin;
+    height:64vmin;
+
+}
+
+.square{
+    height:8vmin;
+    width:8vmin;
+
+    border-width:0 0 0 0 ;
+    position:relative;
+    z-index:0;
+}
+
+.black{
+    background-color: black;
+}
+
+.red{
+    background-color: #FF4242;
+}
+
+.white{
+    fill : white
+}
+
+.beige {
+    fill: #FFD29D 
+}
+
+
+.square svg{
+    height: 8vmin;
+    width: 8vmin;
+    position:relative;
+    z-index: -9;
+
+}
+
+path{
+    position:relative;
+    z-index: -10;
+}
+
+.piece{
+    position:relative;
+    z-index: 9; 
+}
+.highlight{
+    background-color: #32CD32;
+    border: 1px dotted black;
+    box-sizing: border-box;
+}
+.hidden{
+    display: none;
+}
+.active {
+    font-weight: bold;
+}
+.bullet{
+    z-index:-11;
+}
+
+/*
+
+
+
+.black
+{
+    fill:rgb(6, 5, 5)
+}
+
+.light
+{
+   fill: #E6AA68;
+} */
+
+
+ #semiRicochet{
+    transform:rotate(0deg) ;
+
+}
+
+#ricochet{
+    transform: rotate(30deg);
+}
+
+/* .grid-container{
+    background: #eee;
+    display: grid;
+    width: 60vh;
+    height: 60vh;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(8,1fr);
+} */
+
+/* .block{
+    background: #ccc;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #777;
+}  */
